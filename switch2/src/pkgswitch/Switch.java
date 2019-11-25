@@ -16,7 +16,7 @@ public class Switch {
      */
     public static void main(String[] args) {
     
-    Scanner input = new Scanner(System.in);
+   /* Scanner input = new Scanner(System.in);
     int num1, num2, imput ;
     System.out.println("Please choose one option to continue: ");
     System.out.println("1- Add two numbers");
@@ -50,14 +50,29 @@ public class Switch {
             break;
         default :   
             System.out.println("Invalid Option");
-        
-        
-                
-
-
-
-// TODO code application logic here
+        */
+   Scanner reader = new Scanner (System.in);
+   char Grade;
+   System.out.println("Please enter your Grade");
+   Grade = reader.next().charAt(0);
+    switch (Grade)
+    {
+        case ('A'):
+            System.out.println("Excellent");
+            break;
+        case ('B'):
+            System.out.println("Very Good");
+            break;
+        case ('C'):
+            System.out.println("Good");
+            break;
+        default:
+                System.out.println("Please enter valid Grade");
+            
     }
-    
-    }  
+    }
 }
+
+
+
+ 
