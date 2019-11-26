@@ -10,6 +10,8 @@ public class BreakContinue {
 
     public static void main(String[] args) {
     Scanner input = new Scanner (System.in);
+   
+    /*
     int num, sum= 0;   
     for (int i=1;i<=5;i++)
     {
@@ -27,6 +29,25 @@ public class BreakContinue {
     
     }  
     System.out.println("The sum is equal to "+ sum);
-    }
     
+    */
+    int counter = 1, num, sum=0;
+    while (counter<=5)
+    {   
+    System.out.println("Please enter positive number to sum "+ counter);
+    num = input.nextInt();
+    if (num >0)
+        sum+=num;
+    else
+        {
+            System.out.println("Negative numbers are not allowed");
+            continue;
+        }
+    
+    
+    counter++;
+    
+    }
+    System.out.println("The sum is equal to " + sum);
+        } 
 }
